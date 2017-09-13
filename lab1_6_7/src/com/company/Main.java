@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Перед вами матриця [4][5]");
+        System.out.println(" Перед вами матриця [4][5]");
         int matrix[][] = {
                 {1, 1, 1, 3, 4},
                 {2, 1, 3, 1, 2},
