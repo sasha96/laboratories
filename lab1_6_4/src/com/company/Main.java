@@ -19,11 +19,11 @@ public class Main {
         System.out.println("масив успішно заповнений " + Arrays.toString(array));
         System.out.println("отсортыруэм масів ");
         Arrays.sort(array);
-        System.out.println("отсортірований масів " +Arrays.toString(array));
+        System.out.println("отсортірований масів " + Arrays.toString(array));
         System.out.println("зробимо бінарний пошук");
         System.out.println("введіть число з масиву для пошуку");
         int binary = sc.nextInt();
-      int result =  Arrays.binarySearch(array,binary);
+        int result = Arrays.binarySearch(array, binary);
         System.out.println("ваше число маэ індекс " + result);
         System.out.println("Дякую");
     }
