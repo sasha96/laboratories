@@ -20,7 +20,7 @@ public class Main {
             }
             System.out.println();
         }
-        System.out.println("введіть якеcь число від 1 до 4 і я скажу вам його індекс в рядку ");
+        System.out.println(" Введіть якеcь число від 1 до 4 і я скажу вам його індекс в рядку ");
         int var = scanner.nextInt();
         System.out.println("ви ввели чило " + var);
         String res = null;
