@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=Utf-8" />
+			
+		<title>question</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript">
+	
+	function checkbox() {
+		var van = document.getElementById('van').checked;
+		var zero = document.getElementById('zero').checked;
+		var four = document.getElementById('four').checked;
+		var vanMinus = document.getElementById('vanMinus').checked;
+
+		if (van==false&&zero==false&&four==false&&vanMinus==false) {
+			alert('write your war');
+			return true;
+		}
+		 if (zero==true) {
+			alert('your war is  right');
+			return true;
+		}else{
+			alert('your war is not right');
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+
+
+			<b>	package com.company;<br>
+					public class Well {<br>
+				    	public static void main(String[] args) {<br></b>
+					        int a = 1;<br>
+					        int b = 0;<br>
+					        int x = -1;<br>
+					        int z = -2;<br>
+					        b++;<br>
+					        --a;<br>
+					        x--;<br>
+					   <b>  int result = ( ( a - b ) ! = 0 ? x - z : z - x );<br> </b>
+					        ++z;<br>
+					        System.out.println(result);<br>
+					        }<br>
+					        }
+				 <form action="java.html" method="get" onsubmit="return checkbox()">
+					        <p>Write your answer please</p>
+						1<input type="checkbox" name="answer" value="van"  id="van"><br>
+						0<input type="checkbox" name="answer" value="zero"  id="zero"><br>
+						-4<input type="checkbox" name="answer" value="four"  id="four"><br>
+						-1<input type="checkbox" name="answer" value="vanMinus"  id="vanMinus"><br>
+						<input type="submit" name="submit" value="submit"/>
+				</form>
+					
+				<a href="https://www.google.com/">help google</a>
+				<br>
+				<a href="https://www.wikipedia.org/">help wikipedia</a>
+
+</body>
+</html>
