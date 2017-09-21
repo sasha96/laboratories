@@ -1,7 +1,7 @@
 package com.company;
 
 public class Computer {
-    public double price;
+    private double price;
 
     public double getPrice() {
         return price;
@@ -11,7 +11,7 @@ public class Computer {
         this.price = price + price * 0.1;
     }
 
-    public static void view(int i) {
-        System.out.print("your number " + i + " multiply 10% ");
+    public void view(int i) {
+        System.out.println(price);
     }
 }

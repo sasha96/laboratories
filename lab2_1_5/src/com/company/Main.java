@@ -18,8 +18,7 @@ public class Main {
             computer[i] = new Computer();
             int var = scanner.nextInt();
             computer[i].setPrice(var);
-            computer[i].view(i + 1);
-            System.out.println(computer[i].getPrice());
+            computer[i].view(i + 1) ;
         }
     }
 }
