@@ -12,13 +12,11 @@ public class Main {
             array1[i] = (int) (Math.random() * 10);
             array2[i] = (int) (Math.random() * 10);
         }
-        for (int w :
-                array1) {
+        for (int w : array1) {
             System.out.print(w + " ");
         }
         System.out.println("");
-        for (int w :
-                array2) {
+        for (int w : array2) {
             System.out.print(w + " ");
         }
         System.out.println("");

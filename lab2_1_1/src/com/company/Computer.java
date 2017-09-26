@@ -1,9 +1,9 @@
 package com.company;
 
 public class Computer {
-    public String manufacture;
-    public int serialNumber;
-    public float price;
-    public int quantityCPU;
-    public int frequencyCPU;
+    private String manufacture;
+    private int serialNumber;
+    private float price;
+    private int quantityCPU;
+    private int frequencyCPU;
 }
