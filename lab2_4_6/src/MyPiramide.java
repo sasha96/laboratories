@@ -16,7 +16,6 @@ public class MyPiramide {
                 System.out.print(j + " ");
             }
             System.out.println();
-
             row++;
         }
         return w;
