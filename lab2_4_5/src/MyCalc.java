@@ -7,6 +7,7 @@ public class MyCalc {
         double counter = 0;
         double counter2 = 0;
         double del = 4;
+        double result;
         for (double i = 3; i < variable; i += 2) {
             if (counter % 2 == 0) {
                 counter2 += del / i;
@@ -15,7 +16,7 @@ public class MyCalc {
             }
             counter++;
         }
-        del -=counter2;
-        System.out.println(del);
+        result = del - counter2;
+        System.out.println(result);
     }
 }
