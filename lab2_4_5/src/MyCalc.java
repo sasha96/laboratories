@@ -1,22 +1,24 @@
 public class MyCalc {
     public static void main(String[] args) {
-        MyCalc.calcPi(12523);
+        MyCalc.calcPi(52468);
     }
 
     public static void calcPi(int variable) {
         double counter = 0;
-        double counter2 = 0;
         double del = 4;
-        double result;
-        for (double i = 3; i < variable; i += 2) {
-            if (counter % 2 == 0) {
-                counter2 += del / i;
-            } else if (counter % 2 != 0) {
-                counter2 -= del / i;
+        double result = 4;
+        for (double i = 3; i <= variable; i++) {
+            if (counter % 2 == 0 && i % 2 != 0) {
+                result -= del / i;
+                counter++;
+            } else if (counter % 2 != 0 && i % 2 != 0) {
+                result += del / i;
+                counter++;
             }
-            counter++;
+
         }
-        result = del - counter2;
+
         System.out.println(result);
+
     }
 }
