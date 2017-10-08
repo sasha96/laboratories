@@ -24,5 +24,10 @@ class Circle extends Shape {
     public String toString() {
         return "This is " + getClass().getSimpleName() + " , color " + getShapeColor() + " , radius = " + getRadius();
     }
+    @Override
+    public void draw() {
+        System.out.println(toString());
+        System.out.println(calcArea());
+    }
 }
 

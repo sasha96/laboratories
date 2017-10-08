@@ -53,4 +53,10 @@ public class Triangle extends Shape {
         this.b = b;
         this.c = c;
     }
+
+    @Override
+    public void draw() {
+        System.out.println(toString());
+        System.out.println(calcArea());
+    }
 }

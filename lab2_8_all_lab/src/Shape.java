@@ -1,6 +1,6 @@
 
 
-public abstract class Shape {
+public abstract class Shape implements Drawable {
     public abstract double calcArea();
 
     private String shapeColor;

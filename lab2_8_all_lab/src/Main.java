@@ -12,9 +12,7 @@ public class Main {
                 new Circle("blue", 11), new Triangle("write", 5, 5, 5), new Triangle("black", 7, 5, 4)
         };
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i].toString() + " area is : ");
-            System.out.print(array[i].calcArea());
-            System.out.println();
+            array[i].draw();
             sumArea += array[i].calcArea();
             if (array[i] instanceof Circle) {
                 sumCircleArea+=array[i].calcArea();

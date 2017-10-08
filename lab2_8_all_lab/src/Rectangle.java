@@ -33,4 +33,9 @@ public class Rectangle extends Shape {
         this.width = width;
         this.height = height;
     }
+    @Override
+    public void draw() {
+        System.out.println(toString());
+        System.out.println(calcArea());
+    }
 }
