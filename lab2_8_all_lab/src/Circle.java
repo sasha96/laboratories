@@ -1,3 +1,4 @@
+import sun.security.provider.SHA;
 
 class Circle extends Shape {
     private double radius;
@@ -22,7 +23,7 @@ class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "This is " + getClass().getSimpleName() + " , color " + getShapeColor() + " , radius = " + getRadius();
+        return  getClass().getSimpleName() +  ",   color : " + getShapeColor() + " , radius = " + getRadius();
     }
 
     @Override
@@ -33,18 +34,15 @@ class Circle extends Shape {
 
     @Override
     public int compareTo(Object o) {
-        Circle circle = (Circle) o;
-        if (this.calcArea() > circle.calcArea()) return 1;
-        if (this.calcArea() < circle.calcArea()) return -1;
-        return 0;
+        Shape circle = (Shape) o;
+        return this.getShapeColor().compareTo(circle.getShapeColor());
     }
+
     @Override
-    public int compare(Object o1,Object o2){
+    public int compare(Object o1, Object o2) {
         Circle circle1 = (Circle) o1;
-        Circle circle2 = (Circle) o1;
-        if (circle1.compareTo(o1) > circle1.compareTo(o2))return 1;
-        if (circle1.compareTo(o1) < circle1.compareTo(o2))return -1;
-        return 0;
+        Circle circle2 = (Circle) o2;
+        return circle1.getShapeColor().compareTo(circle2.getShapeColor());
     }
 }
 

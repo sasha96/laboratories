@@ -1,9 +1,9 @@
 
 
-public abstract class Shape extends ShapeColorComparator implements Drawable ,Comparable {
+public abstract class Shape extends ShapeColorComparator implements Drawable, Comparable {
     public abstract double calcArea();
 
-    private String shapeColor;
+    public String shapeColor;
 
     public Shape(String shapeColor) {
         this.shapeColor = shapeColor;
@@ -21,6 +21,4 @@ public abstract class Shape extends ShapeColorComparator implements Drawable ,Co
     public String toString() {
         return "This is : " + getClass().getSimpleName() + " , color is : " + getShapeColor();
     }
-
-
 }

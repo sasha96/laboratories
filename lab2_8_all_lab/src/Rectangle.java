@@ -42,19 +42,14 @@ public class Rectangle extends Shape {
 
     @Override
     public int compareTo(Object o) {
-
-        Rectangle rectangle = (Rectangle) o;
-        if (this.calcArea() > rectangle.calcArea()) return 1;
-        if (this.calcArea() < rectangle.calcArea()) return -1;
-        return 0;
+        Shape rectangle = (Shape) o;
+        return this.getShapeColor().compareTo(rectangle.getShapeColor());
     }
 
     @Override
     public int compare(Object o1, Object o2) {
         Rectangle rectangle1 = (Rectangle) o1;
         Rectangle rectangle2 = (Rectangle) o2;
-        if (rectangle1.getShapeColor().charAt(0) > rectangle2.getShapeColor().charAt(0)) return 1;
-        if (rectangle1.getShapeColor().charAt(0) < rectangle2.getShapeColor().charAt(0)) return -1;
-        return 0;
+        return rectangle1.getShapeColor().compareTo(rectangle2.getShapeColor());
     }
 }

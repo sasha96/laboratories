@@ -1,3 +1,4 @@
+import sun.security.provider.SHA;
 
 public class Triangle extends Shape {
     private double a;
@@ -62,16 +63,14 @@ public class Triangle extends Shape {
 
     @Override
     public int compareTo(Object o) {
-        Triangle triangle = (Triangle) o;
-        if (this.calcArea() > triangle.calcArea()) return 1;
-        if (this.calcArea() < triangle.calcArea()) return -1;
-        return 0;
+        Shape triangle = (Shape) o;
+        return this.getShapeColor().compareTo(triangle.getShapeColor());
     }
+
     @Override
-    public int compare(Object o1,Object o2){
+    public int compare(Object o1, Object o2) {
         Triangle triangle1 = (Triangle) o1;
         Triangle triangle2 = (Triangle) o2;
-        if (triangle1.getShapeColor() == triangle2.getShapeColor())return 1;
-        return 0;
+        return triangle1.getShapeColor().compareTo(triangle2.getShapeColor());
     }
 }
