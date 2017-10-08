@@ -67,4 +67,11 @@ public class Triangle extends Shape {
         if (this.calcArea() < triangle.calcArea()) return -1;
         return 0;
     }
+    @Override
+    public int compare(Object o1,Object o2){
+        Triangle triangle1 = (Triangle) o1;
+        Triangle triangle2 = (Triangle) o2;
+        if (triangle1.getShapeColor() == triangle2.getShapeColor())return 1;
+        return 0;
+    }
 }

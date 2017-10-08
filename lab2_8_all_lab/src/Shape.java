@@ -1,6 +1,6 @@
 
 
-public abstract class Shape implements Drawable, Comparable {
+public abstract class Shape extends ShapeColorComparator implements Drawable ,Comparable {
     public abstract double calcArea();
 
     private String shapeColor;

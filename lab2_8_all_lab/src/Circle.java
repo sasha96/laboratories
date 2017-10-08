@@ -38,5 +38,13 @@ class Circle extends Shape {
         if (this.calcArea() < circle.calcArea()) return -1;
         return 0;
     }
+    @Override
+    public int compare(Object o1,Object o2){
+        Circle circle1 = (Circle) o1;
+        Circle circle2 = (Circle) o1;
+        if (circle1.compareTo(o1) > circle1.compareTo(o2))return 1;
+        if (circle1.compareTo(o1) < circle1.compareTo(o2))return -1;
+        return 0;
+    }
 }
 
