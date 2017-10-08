@@ -15,13 +15,13 @@ public class Main {
             array[i].draw();
             sumArea += array[i].calcArea();
             if (array[i] instanceof Circle) {
-                sumCircleArea+=array[i].calcArea();
+                sumCircleArea += array[i].calcArea();
             }
             if (array[i] instanceof Triangle) {
-                sumTriangleArea+=array[i].calcArea();
+                sumTriangleArea += array[i].calcArea();
             }
             if (array[i] instanceof Rectangle) {
-                sumRectArea+=array[i].calcArea();
+                sumRectArea += array[i].calcArea();
             }
         }
         System.out.println("sumArea all Shape " + sumArea);
@@ -29,5 +29,9 @@ public class Main {
         System.out.println("Circle total area : " + sumCircleArea);
         System.out.println("Triangle total area : " + sumTriangleArea);
 
+
+        Rectangle test1 = new Rectangle("blue", 30, 22);
+        Rectangle test2 = new Rectangle("white", 10, 30);
+        System.out.println(test1.compareTo(test2));
     }
 }

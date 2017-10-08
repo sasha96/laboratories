@@ -1,6 +1,6 @@
 
 
-public abstract class Shape implements Drawable {
+public abstract class Shape implements Drawable, Comparable {
     public abstract double calcArea();
 
     private String shapeColor;
@@ -21,7 +21,6 @@ public abstract class Shape implements Drawable {
     public String toString() {
         return "This is : " + getClass().getSimpleName() + " , color is : " + getShapeColor();
     }
-
 
 
 }

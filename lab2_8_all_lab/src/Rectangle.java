@@ -1,4 +1,4 @@
-public class Rectangle extends Shape {
+public class Rectangle extends Shape  {
     private double width;
     private double height;
 
@@ -37,5 +37,13 @@ public class Rectangle extends Shape {
     public void draw() {
         System.out.println(toString());
         System.out.println(calcArea());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Rectangle rectangle = (Rectangle) o;
+        if (this.calcArea() > rectangle.calcArea()) return 1;
+        if (this.calcArea() < rectangle.calcArea()) return -1;
+        return 0;
     }
 }
