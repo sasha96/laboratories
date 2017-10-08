@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,5 +34,16 @@ public class Main {
         Rectangle test1 = new Rectangle("blue", 30, 22);
         Rectangle test2 = new Rectangle("white", 10, 30);
         System.out.println(test1.compareTo(test2));
+
+        Rectangle arr2[] = {new Rectangle("blue", 30, 22),
+                new Rectangle("gray", 31, 22),
+                new Rectangle("black", 32, 23),
+                new Rectangle("red", 40, 12),
+                new Rectangle("white", 32, 22),
+                new Rectangle("green", 30, 25)};
+        Arrays.sort(arr2);
+        for (Rectangle rec : arr2) {
+            rec.draw();
+        }
     }
 }
