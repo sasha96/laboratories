@@ -1,5 +1,3 @@
-
-
 public abstract class Shape extends ShapeColorComparator implements Drawable, Comparable {
     public abstract double calcArea();
 

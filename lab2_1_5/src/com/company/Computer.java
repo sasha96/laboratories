@@ -11,7 +11,7 @@ public class Computer {
         this.price = price + price * 0.1;
     }
 
-    public void view(int i) {
+    public void view() {
         System.out.println(price);
     }
 }

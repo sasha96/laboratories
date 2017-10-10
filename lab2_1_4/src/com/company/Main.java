@@ -16,7 +16,7 @@ public class Main {
         for (int i = 0; i < computer.length; i++) {
             computer[i] = new Computer();
             int var = scanner.nextInt();
-            computer[i].setPrice(var);
+            computer[i].incrementPrice(var);
             System.out.println("your number " + (i + 1) + " multiply 10% " + computer[i].getPrice());
 
         }

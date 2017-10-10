@@ -7,7 +7,7 @@ public class Computer {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void incrementPrice(double price) {
         this.price = price + price * 0.1;
     }
 }
