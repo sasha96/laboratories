@@ -1,3 +1,5 @@
+import java.util.StringTokenizer;
+
 public class Triangle extends Shape {
     private double a;
     private double b;
@@ -72,8 +74,21 @@ public class Triangle extends Shape {
         return triangle1.getShapeColor().compareTo(triangle2.getShapeColor());
     }
 
-    public static Triangle parseTriangle(String name, int i, int r, int w) {
-        Triangle triangle = new Triangle(name, i, r, w);
+    public static Triangle parseTriangle(String string) {
+        Triangle triangle = null;
+        String color = "";
+        double h = 0;
+        double w = 0;
+        double q = 0;
+        StringTokenizer stringTokenizer = new StringTokenizer(string, "\t\n\r,:;");
+        while (stringTokenizer.hasMoreElements()) {
+            color = stringTokenizer.nextToken();
+            h = Double.parseDouble(stringTokenizer.nextToken());
+            w = Double.parseDouble(stringTokenizer.nextToken());
+            q = Double.parseDouble(stringTokenizer.nextToken());
+            triangle = new Triangle(color, h, w, q);
+        }
+        System.out.println(triangle.toString());
         return triangle;
     }
 }

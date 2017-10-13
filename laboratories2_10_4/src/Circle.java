@@ -1,3 +1,5 @@
+import java.util.StringTokenizer;
+
 class Circle extends Shape {
     private double radius;
 
@@ -43,8 +45,17 @@ class Circle extends Shape {
         return circle1.getShapeColor().compareTo(circle2.getShapeColor());
     }
 
-    public static Circle parseCircle(String name, int i) {
-        Circle circle = new Circle(name, i);
+    public static Circle parseCircle(String string) {
+        Circle circle = null;
+        String color = "";
+        double h = 0;
+        StringTokenizer stringTokenizer = new StringTokenizer(string, "\t\n\r,:;");
+        while (stringTokenizer.hasMoreElements()) {
+            color = stringTokenizer.nextToken();
+            h = Double.parseDouble(stringTokenizer.nextToken());
+            circle = new Circle(color, h);
+        }
+        System.out.println(circle.toString());
         return circle;
     }
 }

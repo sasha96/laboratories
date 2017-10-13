@@ -1,3 +1,7 @@
+import com.sun.org.apache.regexp.internal.RE;
+
+import java.util.StringTokenizer;
+
 public class Rectangle extends Shape {
     private double width;
     private double height;
@@ -53,8 +57,19 @@ public class Rectangle extends Shape {
         return rectangle1.getShapeColor().compareTo(rectangle2.getShapeColor());
     }
 
-    public static Rectangle parseRectangle(String name, int i, int r) {
-        Rectangle rectangle = new Rectangle(name, i, r);
+    public static Rectangle parseRectangle(String string) {
+        Rectangle rectangle = null;
+        String color = "";
+        double h = 0;
+        double w = 0;
+        StringTokenizer stringTokenizer = new StringTokenizer(string, "\t\n\r,:;");
+        while (stringTokenizer.hasMoreElements()) {
+            color = stringTokenizer.nextToken();
+            h = Double.parseDouble(stringTokenizer.nextToken());
+            w = Double.parseDouble(stringTokenizer.nextToken());
+            rectangle = new Rectangle(color, h, w);
+        }
+        System.out.println(rectangle.toString());
         return rectangle;
     }
 }
