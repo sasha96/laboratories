@@ -1,0 +1,1 @@
+I decided not to perform these exercises because they are very simple , and not important
